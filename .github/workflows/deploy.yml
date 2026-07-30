@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v6
-        run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner.
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
 
       - name: SSH into EC2 and deploy
         uses: appleboy/ssh-action@v1.2.0
